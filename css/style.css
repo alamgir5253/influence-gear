@@ -1,0 +1,442 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto+Condensed:wght@700&display=swap");
+
+
+/* universel style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container-fouid {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section {
+    margin: 100px auto;
+    width: 100%;
+  }
+/* reuseble component */
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+button {
+  outline: none;
+}
+
+/* header area start */
+header {
+  width: 100%;
+}
+.container-fouid header nav {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  font-style: italic;
+  color: #e02c6d;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 10px;
+}
+.menu ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.menu ul li a {
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #3a3a3a;
+  transition: color 0.3s ease-in-out;
+}
+.menu ul li a:hover {
+  color: #e02c6d;
+}
+
+/* nav end */
+/* header area end */
+
+/* banner start */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3a3a3a;
+  height: calc(100vh - 80px);
+}
+.banner .banner-left{
+    padding-left: 10px;
+}
+.banner .banner-left h1 {
+  font-size: 45px;
+  line-height: 60px;
+}
+.banner .banner-left h1 span{
+    animation-name: header-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes header-animation{
+    0%{ color: #e02c6d;}
+    50%{color: #fb8200;}
+    100%{color:#e02c6d;}
+}
+
+
+.banner .banner-left h3 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+.banner .banner-left p {
+  font-size: 16px;
+}
+.banner .banner-left button,
+.my-section button {
+  font-size: 18px;
+  background: transparent;
+  border: 0;
+  padding: 15px 40px;
+  margin-top: 20px;
+  border-radius: 30px;
+  border: 2px solid #e02c6d;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.banner .banner-left button a,
+.my-section button a {
+  margin-right: 10px;
+  color: #e02c6d;
+  transition: all 0.3s ease-in-out;
+}
+.banner .banner-left button .fas,
+.my-section .fas {
+  color: #e02c6d;
+  width: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.banner .banner-left button:hover {
+  background: #e03c6d;
+  color: #fff;
+}
+.banner .banner-left button:hover a {
+  color: #fff;
+}
+.banner .banner-left button:hover .fas {
+  color: #fff;
+  width: 50px;
+}
+
+.banner .banner-right {
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .banner-right img {
+  width: 70%;
+  text-align: center;
+}
+
+/* banner end */
+
+/* main area start */
+.company-logo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 30px;
+  align-items: center;
+  margin: 0 auto;
+}
+.photo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* popular section area start */
+.collection-heading {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 30px;
+}
+.popular-collection-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 40px;
+}
+.collection {
+    box-shadow: 5px 5px 10px #dad7d7;
+    padding: 0 0 20px 10px;
+    border-radius: 10px;
+    transition: transform .3s ease-in-out;
+}
+.collection:hover{
+    transform:translateY(-5px);
+}
+
+.collection img {
+  width: 300px;
+  height: 300px;
+}
+
+.product-name h3 {
+  margin: 10px 0 5px 0;
+  font-size: 25px;
+}
+.product-price h4 {
+  color: #e02c6d;
+}
+.product-price span {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.product-price {
+}
+.product-ratting .fas {
+  color: #fb8200;
+  font-size: 10px;
+}
+.product-ratting span {
+  color: #3a3a3a;
+  margin-left: 10px;
+}
+.product-detail {
+  color: #3a3a3a;
+}
+.see-more {
+  text-align: end;
+  color: #e03c6d;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.see-more a {
+  color: #e03c6d;
+}
+/* popular section area end*/
+
+/* my-section start */
+.my-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../resources/images/gear.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.my-section h2 {
+  color: #fff;
+  font-size: 40px;
+}
+.my-section button:hover {
+  background: #e03c6d;
+  color: #fff;
+}
+.my-section button:hover a {
+  color: #fff;
+}
+.my-section button:hover .fas {
+  color: #fff;
+}
+
+/* my-section end */
+
+/* main area end */
+
+/* footer start */
+footer {
+  background: #000;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+footer h3 {
+  font-size: 40px;
+  color: #fff;
+}
+footer p {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #3a3a3a;
+}
+footer p i {
+  color: #e02c6d;
+}
+footer .social-link {
+  margin-top: 30px;
+}
+footer .social-link .fab {
+  color: #e03c6d;
+  font-size: 30px;
+  padding: 0 10px;
+}
+/* footer end */
+
+
+/* tablet device responsive start */
+@media only screen and (max-width: 768px) {
+    .menu ul {
+        display:none;
+        margin:20px 0;
+      }
+     
+      
+      .banner {
+          height:50vh;
+      }
+      .banner .banner-right img {
+        width: 60%;}
+        .banner .banner-left h1 {
+            font-size: 30px;
+            line-height: 40px;
+          }
+          .banner .banner-left h3 {
+            font-size: 20px;
+            margin: 10px 0;
+          }
+          .banner .banner-left p {
+            font-size: 15px;
+          }
+          .banner .banner-left button,
+.my-section button {
+    padding: 10px 30px;
+}
+.company-logo {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;align-items: center;
+    
+    }
+    .popular-collection-section {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 40px;
+      }
+     
+      .my-section h2 {
+        font-size: 30px;
+      }
+
+
+      footer {
+        padding: 30px 0;
+      }
+      footer h3 {
+        font-size: 30px;
+      }
+      footer p {
+        font-size: 18px;
+      }
+      footer .social-link {
+        margin-top: 15px;
+      }
+      footer .social-link .fab {
+        font-size: 25px;
+      }
+
+  }
+  /* tablet device responsive end */
+
+
+/* mobole divice responsive start */
+@media only screen and (max-width: 576px) {
+    .menu ul li {
+        display:none;
+        margin:10px 0;
+      }
+      .container-fouid header nav{
+          flex-direction: column;
+      }
+      .container-fouid header nav ul{
+          display: none;
+      }
+      .banner {
+          flex-direction: column;
+          flex-flow: column-reverse;
+      }
+      .banner .banner-right img {
+        width: 50%;}
+        .banner .banner-left h1 {
+            font-size: 30px;
+            line-height: 40px;
+          }
+          .banner .banner-left h3 {
+            font-size: 20px;
+            margin: 10px 0;
+          }
+          .banner .banner-left p {
+            font-size: 14px;
+          }
+          .banner .banner-left button,
+.my-section button {
+    padding: 10px 30px;
+}
+.company-logo {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;align-items: center;
+    
+    }
+    .popular-collection-section {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+        row-gap: 20px;
+      }
+      .my-section{
+          flex-direction: column;
+          justify-content: center;
+      }
+      .my-section h2 {
+        font-size: 20px;
+      }
+
+
+      footer {
+        padding: 20px 0;
+      }
+      footer h3 {
+        font-size: 20px;
+      }
+      footer p {
+        font-size: 14px;
+      }
+      footer .social-link {
+        margin-top: 10px;
+      }
+      footer .social-link .fab {
+        font-size: 20px;
+      }
+
+  }
+
+/* mobole divice responsive end */
